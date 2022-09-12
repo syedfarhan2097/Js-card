@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body onload="script();">
+    <div>
+
+    </div>
+    <section class="aganda">
+        <div class="color-change-feild">
+            <div class="rapper-feild">
+                <input type="text" value="color" class="color-value-input">
+                <input type="submit" class="feild-button">
+            </div>
+        </div>
+        <div class="card-rapper">
+            <div class="sticky-card ">
+                <div class="sticky-rapper card">
+                    <h1 id="card">1.</h1>
+                    <h3>Green</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-1">
+                </div>
+            </div>
+            <div class="sticky-card ">
+                <div class="sticky-rapper card">
+                    <h1>2.</h1>
+                    <h3>Gray</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-2">
+                </div>
+            </div>
+            <div class="sticky-card ">
+                <div class="sticky-rapper card">
+                    <h1>3.</h1>
+                    <h3>Orange</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-3">
+                </div>
+            </div>
+            <div class="sticky-card ">
+                <div class="sticky-rapper card">
+                    <h1>4.</h1>
+                    <h3>Yellow</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-4">
+                </div>
+            </div>
+            <div class="sticky-card">
+                <div class="sticky-rapper card">
+                    <h1>5.</h1>
+                    <h3>Blue</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-5">
+                </div>
+            </div>
+
+            <div class="sticky-card">
+                <div class="sticky-rapper card">
+                    <h1>6.</h1>
+                    <h3>Red</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-6">
+                </div>
+            </div>
+
+            <div class="sticky-card">
+                <div class="sticky-rapper card">
+                    <h1>7.</h1>
+                    <h3>Black</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-7">
+                </div>
+            </div>
+
+            <div class="sticky-card">
+                <div class="sticky-rapper card">
+                    <h1>8.</h1>
+                    <h3>gold</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-8">
+                </div>
+            </div>
+
+            <div class="sticky-card">
+                <div class="sticky-rapper card">
+                    <h1>8.</h1>
+                    <h3>Gray</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-9">
+                </div>
+            </div>
+
+            <div class="sticky-card ">
+                <div class="sticky-rapper card">
+                    <h1 id="card">9.</h1>
+                    <h3>cyan</h3>
+                    <p>Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum Loram ipsum</p>
+                    <input type="submit" class="card-button" value="Change" id="btm-1">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script defer>
+        function script() {
+            let x = 0;
+            var nodelist = document.getElementsByTagName("h3").length;
+
+            // document.getElementsByClassName("card")[0].style.backgroundColor = "#8dc73f";
+            // document.getElementsByClassName("card")[1].style.backgroundColor = "#56555a";
+            // document.getElementsByClassName("card")[2].style.backgroundColor = "#e45a35";
+            // document.getElementsByClassName("card")[3].style.backgroundColor = "#ecb348";
+            // document.getElementsByClassName("card")[4].style.backgroundColor = "#5fb7a1";
+            while (x < nodelist) {
+                document.getElementsByClassName("card")[x].style.color = "white";
+
+                var colorName = document.getElementsByTagName("h3")[x].innerText;
+
+                document.getElementsByClassName("card")[x].style.backgroundColor = colorName;
+
+
+                // document.getElementsByTagName("h1")[x].innerHTML = x = (x + 1) + 1;
+
+                x++;
+            }
+
+
+            jQuery(function() {
+                $('.card-button').click(function() {
+                    var colorNames = $(this).siblings('h3').text();
+                    $(this).val(colorNames);
+                    $('.color-value-input').val(colorNames);
+                    $(this).parent('.card').addClass('color');
+                });
+
+
+                $('.feild-button').click(function() {
+                    var inputColor = $('.color-value-input').val();
+                    $('.card.color h3').text(inputColor);
+                    $('.card.color').css('background-color', inputColor);
+                    $('.card.color').removeClass('color');
+
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+            // var colorName = document.getElementsByTagName("h3")[x].innerText;
+            // // console.log(colorName)
+            // document.getElementsByClassName("card")[x].style.backgroundColor = colorName;
+
+
+
+            // function changeBackground(color){
+            //     document.getElementsByClassName("card")[0].style.background = color;
+            // }
+            // changeBackground("#8dc73f");
+
+
+
+
+
+
+
+            //         function changeBackground(color) {
+            //    document.getElementsByClassName("card-1");.style.background = color;
+            // }
+            // window.addEventListener("load",function() { changeBackground('#8dc73f') });
+
+            // const element = document.getElementsByClassName("card-1");
+
+            // document.getElementsByClassName("card-1").style.background = "#8dc73f";
+
+            // document.getElementById("card").innerHTML = "Hello world!";
+
+            // document.getElementsByTagName("h1")[4].innerHTML = "My name is farhan.";
+
+            // document.getElementsByClassName("card")[0].innerHTML = "<h1>Card 1</h1>";
+        }
+    </script>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
